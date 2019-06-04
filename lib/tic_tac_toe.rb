@@ -68,12 +68,7 @@ end
 # end
 
 def full?(board)
-  board.each do |position|
-    if position == " "
-      return false
-    end
-  end
-  true
+  (board.include?(" ") or board.include?(nil)) ? false : true
 end
 
 def draw?(board)
