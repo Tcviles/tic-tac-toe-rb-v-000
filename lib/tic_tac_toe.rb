@@ -76,11 +76,8 @@ def over?(board)
 end
 
 def winner(board)
-  win_combination = won?(board)
   if over?(board) == true && draw?(board) == false
-    win_index = win_combination[0]
-    letter = board[win_index]
-    return letter
+    board[won?(board)[0]]
   end
 end
 
