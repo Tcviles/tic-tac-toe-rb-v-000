@@ -63,10 +63,6 @@ def won?(board)
   false
 end
 
-# def won?(board)
-#   WIN_COMBINATIONS.detect {|combo| ((board[combo[0]] == board[combo[1]]) and (board[combo[1]] == board[combo[2]]) and (position_taken?(board,combo[0]))) ? combo : nil }
-# end
-
 def full?(board)
   (board.include?(" ") or board.include?(nil)) ? false : true
 end
