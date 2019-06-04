@@ -27,9 +27,7 @@ end
 
 def turn_count(board)
   turns = 0
-  board.each do |position|
-    (position == "X" || position == "O") ? turns += 1 : nil
-  end
+  board.each {|position| (position == "X" || position == "O") ? turns += 1 : nil}
   return turns
 end
 
