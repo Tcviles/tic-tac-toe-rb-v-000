@@ -63,8 +63,8 @@ def won?(board)
     else
       nil
     end
-    false
   end
+  false
 end
 
 # def won?(board)
