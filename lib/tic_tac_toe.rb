@@ -76,9 +76,7 @@ def over?(board)
 end
 
 def winner(board)
-  if over?(board) == true && draw?(board) == false
-    board[won?(board)[0]]
-  end
+  ((over?(board)) && !(draw?(board))) ? board[won?(board)[0]] : nil
 end
 
 def play(board)
