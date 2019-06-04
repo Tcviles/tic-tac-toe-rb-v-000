@@ -59,10 +59,6 @@ def won?(board)
     position_3 = board[win_index_3]
 
     ((position_1 == position_2) && (position_2 == position_3) && (position_taken?(board,win_combination[0]))) ? win_combination : nil
-      return win_combination
-    else
-      nil
-    end
   end
   false
 end
