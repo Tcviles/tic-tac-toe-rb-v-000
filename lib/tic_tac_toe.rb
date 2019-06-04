@@ -18,10 +18,7 @@ def move(board, index, player_token)
 end
 
 def position_taken? (board, index)
-  if board[index] == "X" or board[index] == "O"
-    return true
-  end
-  false
+  (board[index] == "X" or board[index] == "O")
 end
 
 def valid_move?(board, index)
