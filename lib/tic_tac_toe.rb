@@ -22,7 +22,7 @@ def position_taken? (board, index)
 end
 
 def valid_move?(board, index)
-  !((index < 0 || index > 8) or (position_taken?(board, index) == true))
+  !((index < 0 || index > 8) or (position_taken?(board, index)))
 end
 
 def turn_count(board)
